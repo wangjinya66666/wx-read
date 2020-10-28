@@ -1,0 +1,15 @@
+<!-- 畅销书 -->
+<view class="hto-book">
+  <view class="title">
+    <text>{{title}}</text>
+    <text>查看更多</text>
+  </view>
+  <navigator url="{{'../../pages/detail/detail?id='+item._id}}" class="book-model" wx:for="{{msg}}" wx:key='index'> 
+    <image src="http://statics.zhuishushenqi.com{{item.cover}}"></image>
+    <view class="book-right">
+      <view class="right-title">{{item.title}}</view>
+      <view class="right-serc">{{item.shortIntro}}</view>
+      <view class="right-tags">{{item.majorCate}}<text class="tags-splice">|</text><text class="tags-tood">{{item.latelyFollower}}</text>人气</view>
+    </view>
+  </navigator>
+</view>

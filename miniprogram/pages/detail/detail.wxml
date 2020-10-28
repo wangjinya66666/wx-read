@@ -1,0 +1,71 @@
+<view class="datail">
+<!-- 简介标签-->
+  <view class="detail-book">
+      <view class="book-flet">
+          <image src="http://statics.zhuishushenqi.com{{msg.cover}}" alt="" />
+      </view>
+      <view class="book-right">
+          <view class="r-title">{{msg.title}}</view>
+          <view class="r-tags">
+              <text class="tags-red">{{msg.author}}</text><text class="r-line">|</text>{{msg.cat}}<text class="r-line">|</text>{{Math.round(msg.wordCount/10000)}}万字
+          </view>
+          <view class="end">完结</view>
+      </view>
+  </view>
+<!-- 按钮加购阅读 -->
+  <view class="detail-link">
+        <text class="add">加入书架</text >
+        <text  class="read">立即阅读</text >
+  </view>
+  <view class="information">
+      <view class="i-module">
+          <view>追人气</view>
+          <view class="m-desc">{{msg.latelyFollower}}人</view>
+      </view>
+      <view class="i-module">
+          <view>读书留存率</view>
+          <view  class="m-desc">{{msg.retentionRatio}}%</view>
+      </view>
+      <view class="i-module">
+          <view>日更字数/天</view>
+          <view  class="m-desc">{{msg.serializeWordCount}}</view>
+      </view>
+  </view>
+<!-- 图书简介 -->
+  <view class="introduction">
+    {{msg.longIntro}} 
+  </view>
+<!-- 图书目录 -->
+  <view class="directory">
+    <text class="title">目录</text>
+    <text class="d-right">{{msg.lastChaviewter}} <text class="iconfont icon-jiantou dirrctory-r" ></text> </text>
+  </view> 
+  <!-- 评论 -->
+  <view class="comment">
+    <view class="h4">精品评论</view>
+    <view class="c-boytique">
+        <image src="http://statics.zhuishushenqi.com/avatar/39/d8/39d81cf4cd1822b281db8157bfccdab3" alt="" />
+        <view class="c-b-right">
+            <view class="b-r-name">疯狂的业主</view>
+            <view class="b-r-title">人间至味是清欢</view>
+            <view class="score">
+                <text class="iconfont">&#xe615;</text>
+            </view>
+            <view class="c-b-text">不得不说，这女主也是绝了，完全不按套路出牌，不走寻常路啊！每次看到辛夷的那些小心思，我都会想到为了逃避父母问成绩时的那些小九九😁不过易扬的心理素质也是好，听见辛夷那几声“狗男人”也只是捏捏拳头啊！</view>
+            <view class="time"><text>七天前</text></view>
+        </view>
+    </view>
+    <view class="c-boytique">
+        <image src="http://statics.zhuishushenqi.com/icon/avatar.png" alt="" />
+        <view class="c-b-right">
+            <view class="b-r-name">伦桑</view>
+            <view class="b-r-title">山有木兮</view>
+            <view class="score">
+                <text class="iconfont">&#xe615;</text >
+            </view>
+            <view class="c-b-text">不得不说，这女主也是绝了，完全不按套路出牌，不走寻常路啊！每次看到辛夷的那些小心思，我都会想到为了逃避父母问成绩时的那些小九九😁不过易扬的心理素质也是好，听见辛夷那几声“狗男人”也只是捏捏拳头啊！</view>
+            <view class="time"><text>一月前</text></view>
+        </view>
+    </view>
+  </view>   
+</view>

@@ -1,0 +1,112 @@
+.datail{
+  color: #999;
+}
+.book-flet image{
+  width: 130rpx;
+  height: 174rpx;
+  margin-right: 24rpx;
+}
+.detail-book,
+.information{
+  display: flex;
+  padding: 30rpx;
+  
+}
+.book-right{
+  flex: 1;
+}
+.r-title{
+  font-size: 32rpx;
+  color: #222;
+}
+.tags-red{
+  color: var(--themeColor);
+}
+.r-line,
+.directory{
+  padding: 0 30rpx;
+}
+.detail-link text{
+  display: inline-block;
+  width: 300rpx;
+  height: 88rpx;
+  line-height: 88rpx;
+  text-align: center;
+  border: 1px solid var(--themeColor);
+  color: var(--themeColor);
+  border-radius: 6rpx;
+}
+.read{
+  float: right;
+}
+.detail-link{
+  padding: 0 30rpx;
+}
+.information{
+  margin: 30rpx 0;
+  border: 1px solid #ededed;
+}
+.i-module{
+  flex: 1;
+  text-align: center;
+}
+.detail-link .read{
+  color: #fff;
+  background: var(--themeColor);
+}
+.m-desc{
+  padding-top: 20rpx;
+  font-size: 32rpx;
+  color: #222;
+}
+.introduction{
+  margin: 30rpx; 
+  line-height: 1.8;
+  font-size: 22rpx;
+  color: #222;
+  text-align: justify;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+.directory .title{
+  line-height: 80rpx;
+}
+.d-right{
+  float: right;
+}
+.comment .h4{
+  padding:0 30rpx;
+  line-height: 80rpx;
+  text-align: left;
+  border-top: 1px solid #ebebeb;
+}
+.c-boytique image{
+  width: 70rpx;
+  height: 70rpx;
+  margin-right: 20rpx;
+  border-radius: 50%;
+}
+.c-boytique{
+  display: flex;
+  padding: 30rpx;
+}
+.c-b-right{
+  flex: 1;
+}
+.b-r-title{
+  color: #000;
+}
+.b-r-name{
+  color: #a58d5e;
+}
+.c-b-text{
+  font-size: 22rpx;
+  line-height: 30rpx;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}

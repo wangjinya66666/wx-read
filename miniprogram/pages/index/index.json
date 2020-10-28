@@ -1,0 +1,7 @@
+{
+  "usingComponents": {
+    "IndexInput":"../../components/IndexInput/IndexInput",
+    "BookMould":"../../components/BookMould/BookMould"
+  },
+  "navigationBarTitleText": "首页"
+}

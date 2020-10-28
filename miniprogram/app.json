@@ -1,0 +1,42 @@
+{
+  "pages": [
+    "pages/detail/detail",
+    "pages/index/index", 
+    "pages/classbook/classbook",
+    "pages/serach/serach",
+    "pages/bookshelf/bookshelf",
+    "pages/ranking/ranking",
+    "pages/vip/vip",
+    "pages/recharge/recharge"
+  ],
+  "window": {
+    "backgroundColor": "#F6F6F6",
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#ea4136",
+    "navigationBarTitleText": "乐读",
+    "navigationBarTextStyle": "white"
+  },
+  "tabBar": {
+    "color": "#999",
+    "selectedColor":"#ea4136",
+    "backgroundColor": "#fff",
+    "list": [{
+      "pagePath": "pages/index/index",   
+      "text": "首页",
+      "iconPath": "./images/index.png",
+      "selectedIconPath": "./images/indexred.png"
+    },{
+      "pagePath": "pages/classbook/classbook",
+      "text": "分类",
+      "iconPath": "./images/class.png",
+      "selectedIconPath": "./images/classred.png"
+    },{
+      "pagePath": "pages/bookshelf/bookshelf",
+      "text": "书架",
+      "iconPath": "./images/books.png",
+      "selectedIconPath": "./images/booksred.png"
+    }]
+  },
+  "sitemapLocation": "sitemap.json",
+  "style": "v2"
+}
