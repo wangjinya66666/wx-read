@@ -1,3 +1,7 @@
 {
-  "usingComponents": {}
+  "usingComponents": {
+    "IndexInput":"../../components/IndexInput/IndexInput",
+    "IndexBanner":"../../components/IndexBanner/IndexBanner",
+    "BookMould":"../../components/BookMould/BookMould"
+  }
 }

@@ -1,2 +1,12 @@
-<!--pages/classbook/classbook.wxml-->
-<text>pages/classbook/classbook.wxml</text>
+<view class="classing">
+      <!-- 分类主题 -->
+      <view class="class-tag" wx:for="{{dataAll}}"  wx:for-index='nature' wx:key='index'>
+          <view class="c-title">{{nature=='male'?'男':nature=='female'?'女':nature=='press'?'出版':nature=='picture'?'其他':''}}</view>
+          <view url="../classmall/classmall" class="ul" >
+              <navigator url="{{'../classmall/classmall?name='+item.name+'&big='+nature}}" class="li" wx:for="{{item}}" wx:key='index'>
+                  <view class="h2">{{item.name}}</view>
+                  <view class="p">{{item.bookCount}}</view>
+              </navigator>
+          </view>
+      </view>
+  </view>

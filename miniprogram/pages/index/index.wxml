@@ -1,12 +1,8 @@
 <view>
   <!-- 搜索 -->
-  <IndexInput></IndexInput>
+  <IndexInput/>
   <!-- 轮播 -->
-  <swiper interval="1500" indicator-color="rgba(0,0,0,0.3)" indicator-active-color="red" autoplay="true" circular="true" class="banner">
-    <swiper-item wx:for="{{imarges}}" wx:key='index'>
-      <image src="{{item}}"></image>
-    </swiper-item>
-  </swiper>
+  <IndexBanner/>
   <!-- icons图标 -->
   <view class="icons">
     <navigator url="{{item.path}}" class="icons-li" wx:for="{{icons}}" wx:key='index'>

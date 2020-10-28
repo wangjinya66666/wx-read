@@ -1,2 +1,28 @@
-<!--pages/ranking/ranking.wxml-->
-<text>pages/ranking/ranking.wxml</text>
+<!--排行榜页面-->
+<view class="ranking">
+   <view class="r-contaniner">
+       <view class="r-header">
+        <text data-big="male" data-small="54d42d92321052167dfb75e3"  bindtap="clickBig" class="li">男频</text>  
+        <text data-big="female" data-small="54d43437d47d13ff21cad58b"   bindtap="clickBig"  class="li">女频</text>  
+        <text data-big="picture" data-small="5a322ef4fc84c2b8efaa8335"  bindtap="clickBig" class="li">漫画</text>  
+       </view>
+       <view class="r-bottom">
+  <!-- 左侧二级分类 -->
+  <scroll-view scroll-y class="b-left">
+    <view class="l-li" wx:for="{{leftMsg}}" wx:key='index'  data-id="{{item._id}}" bindtap="clickSmall">{{item.shortTitle}}</view>
+  </scroll-view>
+  <!-- 右侧书籍模块 -->
+  <scroll-view scroll-y="true" class="b-right">
+    <navigator url="{{'../../pages/detail/detail?id='+item._id}}" class="book-model" wx:for="{{rightMsg}}" wx:key='index'> 
+      <image src="http://statics.zhuishushenqi.com{{item.cover}}"></image>
+      <view class="book-right">
+        <view class="right-title">{{item.title}}</view>
+        <view class="right-serc">{{item.shortIntro}}</view>
+        <view class="right-tags">{{item.majorCate}}<text class="tags-splice">|</text><text class="tags-tood">{{item.latelyFollower}}</text>人气</view>
+      </view>
+    </navigator>
+  </scroll-view>
+</view>
+
+   </view>
+</view>

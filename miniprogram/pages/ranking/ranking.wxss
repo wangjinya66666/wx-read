@@ -1,1 +1,70 @@
-/* pages/ranking/ranking.wxss */
+page,
+.ranking,
+.r-contaniner{
+  height: 100%;
+}
+
+.r-bottom{
+  height: 90%;
+}
+.ranking{
+  padding: 0 30rpx;
+}
+.r-header{
+  display: flex;
+  text-align: center;
+  line-height: 80rpx;
+  border-bottom: 1px solid #ededed;
+}
+.r-header .li{
+  flex: 1;
+}
+.book-model{
+  display: flex;
+  padding: 30rpx;
+  font-size: 24rpx;
+  color: #333;
+
+}
+.title{
+  display: flex;
+  justify-content: space-between;
+  padding: 30rpx 30rpx 0 30rpx;
+}
+.book-right{
+  flex: 1;
+}
+.right-title{
+  font-size: 28rpx;
+}
+.book-model  image{
+  width: 140rpx;
+  height: 160rpx;
+  padding-right: 30rpx;
+}
+.right-serc{
+  margin: 8rpx 0;
+  color: #999;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+.tags-splice {
+  padding: 0 20rpx;
+}
+.tags-tood{
+  color: #e7423d;
+}
+.r-bottom{
+  display: flex;
+}
+.b-left{
+  width: 200rpx;
+  text-align: center;
+  line-height: 80rpx;
+}
+.b-right{
+  flex: 1;
+}

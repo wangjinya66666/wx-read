@@ -1,12 +1,13 @@
 {
   "pages": [
-    "pages/detail/detail",
-    "pages/index/index", 
     "pages/classbook/classbook",
+    "pages/classmall/classmall",
+    "pages/index/index", 
+    "pages/vip/vip",
+    "pages/ranking/ranking",
+    "pages/detail/detail",
     "pages/serach/serach",
     "pages/bookshelf/bookshelf",
-    "pages/ranking/ranking",
-    "pages/vip/vip",
     "pages/recharge/recharge"
   ],
   "window": {

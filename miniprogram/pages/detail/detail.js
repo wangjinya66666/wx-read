@@ -15,8 +15,8 @@ Page({
     console.log(options.id);
     let that=this;
     wx.request({
-      // url: 'http://api.zhuishushenqi.com/book/'+options.id,
-      url: 'http://api.zhuishushenqi.com/book/548d9c17eb0337ee6df738f5',
+      url: 'http://api.zhuishushenqi.com/book/'+options.id,
+      // url: 'http://api.zhuishushenqi.com/book/548d9c17eb0337ee6df738f5',
       success:function(res){
         that.setData({
           msg:res.data

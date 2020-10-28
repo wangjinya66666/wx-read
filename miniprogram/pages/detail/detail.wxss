@@ -26,6 +26,13 @@
 .directory{
   padding: 0 30rpx;
 }
+.directory{
+  line-height: 40rpx;
+}
+.icon-jiantou{
+  display: inline-block;
+  margin-top: 24rpx;
+}
 .detail-link text{
   display: inline-block;
   width: 300rpx;
@@ -100,6 +107,7 @@
   color: #000;
 }
 .b-r-name{
+  font-size: 22rpx;
   color: #a58d5e;
 }
 .c-b-text{
@@ -109,4 +117,12 @@
   -webkit-line-clamp: 2;
   -webkit-box-orient: vertical;
   overflow: hidden;
+}
+.icon-xing{
+  padding-right: 10rpx;
+  font-size: 20rpx;
+  color: #f09047;
+}
+.time{
+  font-size: 22rpx;
 }

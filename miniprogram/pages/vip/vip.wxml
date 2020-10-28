@@ -1,2 +1,10 @@
-<!--pages/vip/vip.wxml-->
-<text>pages/vip/vip.wxml</text>
+<view class="vip">
+  <!-- 搜索组件 -->
+  <IndexInput />
+  <!-- banner组件 -->
+  <IndexBanner />
+  <!-- vip排行 -->
+  <BookMould bookid='57eb86f0ef9e5a8f20543d7d'></BookMould> 
+  <!-- vip排行 -->
+  <BookMould bookid='54d430e9a8cb149d07282496'></BookMould> 
+</view>

@@ -1,1 +1,31 @@
-/* pages/classbook/classbook.wxss */
+page{
+  padding: 0 30rpx;
+}
+.c-title{
+  line-height: 80rpx;
+  color: #999;
+}
+.ul{
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+}
+.li{
+  box-sizing: border-box;
+  flex: 33.33%;
+  flex-grow:0;
+  padding: 30rpx;
+  border-top: 1px solid #f8f8f8;
+  border-right: 1px solid #f8f8f8;
+  border-bottom: 1px solid #f8f8f8;
+}
+.li .h2{
+  line-height:40rpx;
+  font-size: 30rpx;
+  font-weight: 700;
+  color: #333
+}
+.li .p{
+  font-size: 12px;
+  color: #ccc;
+}

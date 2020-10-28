@@ -5,14 +5,23 @@ Page({
    * 页面的初始数据
    */
   data: {
-
+    dataAll:null
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-
+    let that=this;
+    wx.request({
+      url: 'http://api.zhuishushenqi.com/cats/lv2/statistics',
+      success:function(res){
+        that.setData({
+          dataAll:res.data
+        })
+        // console.log('分类页面数据',that.data.dataAll);
+      }
+    })
   },
 
   /**

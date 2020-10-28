@@ -30,9 +30,6 @@ Component({
       let that=this;
       wx.request({
         url: 'http://api.zhuishushenqi.com/ranking/'+this.properties.bookid,
-        header: {
-          'content-type': 'application/json' // 默认值，返回的数据设置为json数组格式
-        },
         success: function (res) {
           var data=res.data.ranking.books.splice(0,4);
           that.setData({
