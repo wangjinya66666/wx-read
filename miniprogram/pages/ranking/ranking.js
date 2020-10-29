@@ -7,7 +7,9 @@ Page({
   data: {
     leftAll:[],
     leftMsg:[],
-    rightMsg:[]
+    rightMsg:[],
+    bigRed:0,
+    smallRed:[0,0,0]
   },
 
   /**
@@ -25,7 +27,7 @@ Page({
       success: function (res) {
         that.setData({
           leftAll:res.data,
-          leftMsg:res.data.male
+          leftMsg:res.data.male,
         })
         // console.log('小分类数据',that.data.leftMsg);//打印出返回的数据
       },
@@ -49,15 +51,22 @@ Page({
     const a=e.currentTarget.dataset.big;
     const b=this.data.leftAll[a];
     this.setData({
-      leftMsg:b
+      leftMsg:b,
+      bigRed:e.currentTarget.dataset.i
     })
     this.getRightData(e.currentTarget.dataset.small)
     // console.log('点击改变之后的左侧值',this.data.leftMsg)
   },
   // 点击左侧按钮
   clickSmall(e){
-    this.getRightData(e.currentTarget.dataset.id);
+    let that=this;
+    that.setData({
+      ["smallRed["+this.data.bigRed+"]"]:e.currentTarget.dataset.i
+    })
+ 
+    this.getRightData(e.currentTarget.dataset.id);  
   },
+
 
   /**
    * 生命周期函数--监听页面初次渲染完成

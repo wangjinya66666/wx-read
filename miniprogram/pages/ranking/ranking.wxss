@@ -19,6 +19,10 @@ page,
 .r-header .li{
   flex: 1;
 }
+.r-header .select,
+.b-left .select{
+  color: #e7423d;
+}
 .book-model{
   display: flex;
   padding: 30rpx;

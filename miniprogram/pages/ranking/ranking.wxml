@@ -2,14 +2,14 @@
 <view class="ranking">
    <view class="r-contaniner">
        <view class="r-header">
-        <text data-big="male" data-small="54d42d92321052167dfb75e3"  bindtap="clickBig" class="li">男频</text>  
-        <text data-big="female" data-small="54d43437d47d13ff21cad58b"   bindtap="clickBig"  class="li">女频</text>  
-        <text data-big="picture" data-small="5a322ef4fc84c2b8efaa8335"  bindtap="clickBig" class="li">漫画</text>  
+        <text data-big="male" data-small="54d42d92321052167dfb75e3"  bindtap="clickBig"  class="li {{ bigRed==0?'select':''}}" data-i="0">男频</text>  
+        <text data-big="female" data-small="54d43437d47d13ff21cad58b"   bindtap="clickBig"  class="li {{ bigRed==1?'select':''}}" data-i="1">女频</text>  
+        <text data-big="picture" data-small="5a322ef4fc84c2b8efaa8335"  bindtap="clickBig" class="li {{ bigRed==2?'select':''}}" data-i="2">漫画</text>  
        </view>
        <view class="r-bottom">
   <!-- 左侧二级分类 -->
   <scroll-view scroll-y class="b-left">
-    <view class="l-li" wx:for="{{leftMsg}}" wx:key='index'  data-id="{{item._id}}" bindtap="clickSmall">{{item.shortTitle}}</view>
+    <view class="l-li {{smallRed[bigRed]==index?'select':''}}" wx:for="{{leftMsg}}" wx:key='index'  data-id="{{item._id}}" data-i="{{index}}" bindtap="clickSmall">{{item.shortTitle}}</view>
   </scroll-view>
   <!-- 右侧书籍模块 -->
   <scroll-view scroll-y="true" class="b-right">

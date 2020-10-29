@@ -1,1 +1,80 @@
-/* pages/recharge/recharge.wxss */
+.a-money .active{
+  color: #b08544;
+  background-image: linear-gradient(to right, #fefaee ,#f2e6d2);
+  border: 1px solid #d9c3a3;
+}
+h4 i{
+  float: right;
+}
+.recharge{
+  background: #f4f4f4;
+}
+.vip{
+  margin: 40rpx 0;
+  text-align: center;
+  line-height: 60rpx;
+  background: url('http://imgasset.txtbook.com.cn/config/images/2020010715591912341.jpg') no-repeat;
+  background-size: 90% 100%;
+  background-position-x: center;
+}
+.v-title image{
+  width: 48rpx;
+  height: 40rpx;  
+}
+.v-title{
+  color: #b08544;
+}
+.v-price{
+  color: #b08544;
+}
+.vip p{
+  padding: 20rpx 0;
+}
+.a-money{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 0 30rpx;
+  color: #333;
+}
+.amount{
+  background: #fff;
+}
+.m-modular{
+  flex: 30%;
+  flex-grow: 0;
+  flex-shrink: 0;
+  padding: 20rpx 0;
+  margin-bottom: 30rpx;
+  border: 1px solid #ededed;
+  border-radius: 12rpx;
+  text-align: center;
+}
+.m-num{
+  font-size: 40rpx;
+  padding-bottom: 18rpx;
+  font-weight: 400;
+}
+.m-more{
+  font-size: 24rpx;
+  color: #666;
+}
+.h4{
+  height: 80rpx;
+  padding: 0 20rpx;
+  line-height: 80rpx;
+  overflow: hidden;
+}
+.h4 text{
+  float: right;
+}
+.btn{
+  display: inline-block;
+  margin: 0 25%;
+  text-align: center;
+  width: 50%;
+  line-height: 80rpx;
+  border: 1px solid #b08544;
+  border-radius: 12rpx;
+  background-image: linear-gradient(to right, #fefaee ,#f2e6d2);
+}

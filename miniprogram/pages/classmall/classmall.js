@@ -6,7 +6,8 @@ Page({
    */
   data: {
     minsdata:null,
-    bookModula:[]
+    bookModula:[],
+    selectRes:0
   },
 
   /**
@@ -53,6 +54,14 @@ Page({
         // console.log('获取到的书籍',this.data.bookModula);
       }
     })
+  },
+  // 点击小分类实现数据切换以及颜色的切换
+  clickSmall(e){
+    // console.log('传递的data数据',e.currentTarget.dataset);
+    this.setData({
+      selectRes:e.currentTarget.dataset.i
+    })
+    this.getBooks(this.options.big,this.options.name,e.currentTarget.dataset.item);
   },
   
 

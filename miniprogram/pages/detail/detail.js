@@ -12,7 +12,7 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    console.log(options.id);
+    // console.log('详情页id',options.id);
     let that=this;
     wx.request({
       url: 'http://api.zhuishushenqi.com/book/'+options.id,
@@ -21,7 +21,7 @@ Page({
         that.setData({
           msg:res.data
         })
-        console.log('详情页数据渲染',res.data)
+        // console.log('详情页数据渲染',res.data)
       }
     })
   },

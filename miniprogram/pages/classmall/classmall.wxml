@@ -1,15 +1,17 @@
 <view class="classmall">
-     <view scroll-x="true" class="mins">
-            <text >全部</text>
-            <text wx:for="{{minsdata[0].mins}}" wx:key='index'>{{item}}</text>
+     <view  class="mins">
+            <text bindtap="clickSmall" data-item="" data-i="0"  class="{{selectRes==0?'tags-tood':''}}">全部</text>
+            <text wx:for="{{minsdata[0].mins}}" wx:key='index' bindtap="clickSmall" data-item="{{item}}" data-i="{{index+1}}" class="{{selectRes==index+1?'tags-tood':''}}">{{item}}</text>
      </view>
      <!-- 书籍模块 -->
-  <navigator url="{{'../../pages/detail/detail?id='+item._id}}" class="book-model" wx:for="{{bookModula}}" wx:key='index'> 
+  <navigator wx:if="{{bookModula.length>0}}" url="{{'../../pages/detail/detail?id='+item._id}}" class="book-model" wx:for="{{bookModula}}" wx:key='index'> 
     <image src="http://statics.zhuishushenqi.com{{item.cover}}"></image>
     <view class="book-right">
       <view class="right-title">{{item.title}}</view>
+      <view class="right-author">{{item.author}}<text class="tags-splice">|</text><text>{{item.majorCate}}</text></view>
       <view class="right-serc">{{item.shortIntro}}</view>
-      <view class="right-tags">{{item.majorCate}}<text class="tags-splice">|</text><text class="tags-tood">{{item.latelyFollower}}</text>人气</view>
+      <view class="right-tags">{{item.latelyFollower}}人气<text class="tags-splice">|</text><text class="tags-tood">{{item.retentionRatio}}</text>留存率</view>
     </view>
   </navigator>
+  <view>暂无书籍</view>
 </view>

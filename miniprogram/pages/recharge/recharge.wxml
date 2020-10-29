@@ -1,2 +1,22 @@
-<!--pages/recharge/recharge.wxml-->
-<text>pages/recharge/recharge.wxml</text>
+<view class="recharge">
+      <!-- vip卡 -->
+      <view class="vip">
+          <view class="v-title"><image src="https://m.txtbook.com.cn/Public/skin/a2/Home/public/images/vipIco2.png" /> 包年畅读VIP超级会员</view >
+          <view class="v-price">￥365.00</view >
+          <view class="v-txt">每天1元，全年免费看</view >
+      </view>
+      <!-- 充值金额 -->
+      <view class="amount">
+          <view class="h4">充值金额</view>
+          <view class="a-money">
+               <!-- v-bind:class='{active:index==num}' -->
+              <view  wx:for="{{ moneys}}" wx:key='index' bindtap="clickBtn" data-i="{{index}}" class="m-modular {{index==cont?'active':''}}">
+                 <view class="m-num">￥{{item.num}}</view >
+                 <view class="m-more">{{item.more}}追书币</view >
+              </view>
+          </view>
+          <view class="h4">支付方式 <text class="iconfont icon-jiantou"></text></view>
+          <view class="btn">立即充值</view>
+      </view>
+      
+  </view>

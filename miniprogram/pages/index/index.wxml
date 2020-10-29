@@ -6,6 +6,7 @@
   <!-- icons图标 -->
   <view class="icons">
     <navigator url="{{item.path}}" class="icons-li" wx:for="{{icons}}" wx:key='index'>
+      <!-- cloud://node-3g5q3dh8fcdbc5dd.6e6f-node-3g5q3dh8fcdbc5dd-1304038594/image.jpg -->
       <image  src="{{item.url}}"></image>
       <view>{{item.name}}</view>
     </navigator>
@@ -14,6 +15,9 @@
   </view>
   <!-- 最热榜模块 -->
   <BookMould bookid='54d42d92321052167dfb75e3'></BookMould> 
+  <view class="line">
+  </view>
   <!-- 潜力榜模块 -->
   <BookMould bookid='54d42e72d9de23382e6877fb'></BookMould> 
+
 </view>
