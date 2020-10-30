@@ -1,0 +1,33 @@
+<view class="personal">
+  <image src="cloud://node-3g5q3dh8fcdbc5dd.6e6f-node-3g5q3dh8fcdbc5dd-1304038594/bgc.png" class="bgc"> </image>
+      <!-- 个人信息 -->
+      <view class="information">
+          <image src="http://thirdqq.qlogo.cn/g?b=oidb&k=RicSibA7eZI2co5NDuOmF7Ag&s=100&t=1585669445" mode="widthFix"/>
+          <view class="i-txt">
+              <view class="t-title">青音</view>
+              <view class="t-id">用户ID:5f9179e08f7e411000b37869</view>
+          </view>
+      </view>
+      <!-- 追书卷充值 -->
+      <view class="recharge">
+          <view class="r-modular">
+              <view class="r-title">追书券</view>
+              <view class="r-num">0</view>
+              <view class="r-exchange">兑换</view>
+          </view>
+          <view class="r-modular">
+              <view class="r-title">追书币</view>
+              <view class="r-num">0</view>
+              <view class="r-money">充值</view>
+          </view>
+      </view>
+      <!-- 分类页面 -->
+      <view class="p-pages">
+          <view class="p-modular" wx:for="{{images}}" wx:key='index'>
+              <image mode='widthFix' src="{{item.cove}}" />
+              <text class="m-title">{{item.title}}</text>
+              <text class="iconfont icon-jiantou"></text>
+          </view>
+        </view>
+       <view class="quit">退出登录</view>
+</view>

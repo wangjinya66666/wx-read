@@ -14,7 +14,7 @@
   <!-- 右侧书籍模块 -->
   <scroll-view scroll-y="true" class="b-right">
     <navigator url="{{'../../pages/detail/detail?id='+item._id}}" class="book-model" wx:for="{{rightMsg}}" wx:key='index'> 
-      <image src="http://statics.zhuishushenqi.com{{item.cover}}"></image>
+      <image src="http://statics.zhuishushenqi.com{{item.cover}}" lazy-load></image>
       <view class="book-right">
         <view class="right-title">{{item.title}}</view>
         <view class="right-serc">{{item.shortIntro}}</view>

@@ -2,10 +2,10 @@
 <view class="hto-book">
   <view class="title">
     <text>{{title}}</text>
-    <text>查看更多</text>
+    <!-- <text>查看更多</text> -->
   </view>
   <navigator url="{{'../../pages/detail/detail?id='+item._id}}" class="book-model" wx:for="{{msg}}" wx:key='index'> 
-    <image src="http://statics.zhuishushenqi.com{{item.cover}}"></image>
+    <image src="http://statics.zhuishushenqi.com{{item.cover}}" ></image>
     <view class="book-right">
       <view class="right-title">{{item.title}}</view>
       <view class="right-serc">{{item.shortIntro}}</view>

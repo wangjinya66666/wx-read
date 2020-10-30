@@ -27,7 +27,7 @@ Component({
   lifetimes: {
     attached: function() {
       // 在组件实例进入页面节点树时执行
-      let that=this;
+      let that=this; 
       wx.request({
         url: 'http://api.zhuishushenqi.com/ranking/'+this.properties.bookid,
         success: function (res) {

@@ -14,7 +14,7 @@
   </view>
 <!-- 按钮加购阅读 -->
   <view class="detail-link">
-        <text class="add">加入书架</text >
+        <text class="add {{clickColor==true?'select':''}}" bindtap="addBooks" >{{clickTxt}}</text >
         <text  class="read">立即阅读</text >
   </view>
   <view class="information">

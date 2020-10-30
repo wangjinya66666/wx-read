@@ -126,3 +126,8 @@
 .time{
   font-size: 22rpx;
 }
+.detail-link .select{
+  background: #999;
+  border: #999;
+  color: #000;
+}

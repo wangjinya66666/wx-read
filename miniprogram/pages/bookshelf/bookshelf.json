@@ -1,3 +1,5 @@
 {
-  "usingComponents": {}
+  "usingComponents": {
+    "IndexInput":"../../components/IndexInput/IndexInput"
+  }
 }
