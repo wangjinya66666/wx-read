@@ -20,7 +20,7 @@
 .name{
   color: #333;
   font-weight: 600;
-  padding-bottom: 30rpx;
+  padding-bottom: 10rpx;
 }
 .toDleter{
   float: right;

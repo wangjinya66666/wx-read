@@ -31,6 +31,27 @@ Page({
         cont:e.currentTarget.dataset.i
     })
   },
+  //点击判断是否已经获取tokn
+  clickAmount(){
+    const token=wx.getStorageSync('token');
+    if(!token){ //不存在就授权
+        wx.navigateTo({
+           url:'../empower/empower' 
+        })
+    }else{ //存在就调用支付
+        wx.requestPayment({
+            timeStamp: '',
+            nonceStr: '',
+            package: '',
+            signType: 'MD5',
+            paySign: '',
+            success (res) { },
+            fail (res) { }
+          })
+
+    }
+  },
+
   /**
    * 生命周期函数--监听页面加载
    */

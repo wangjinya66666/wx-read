@@ -2,15 +2,17 @@
   <!-- 搜索 -->
   <IndexInput></IndexInput>
   <!-- 加购图书 -->
+<view class="books" wx:if="{{msg.length>0}}">
   <view class="selectContainer" wx:for="{{msg}}" wx:key='index'>
       <view class="cover">
-        <!-- <image src="http://statics.zhuishushenqi.com/agent/http%3A%2F%2Fimg.1391.com%2Fapi%2Fv1%2Fbookcenter%2Fcover%2F1%2F2251198%2F2251198_d29a158db1634ae9a75020c25dfaeca4.jpg%2F?imageMogr2/thumbnail/160x200"></image> -->
           <image src="http://statics.zhuishushenqi.com{{item.cover}}" mode="widthFix" />
       </view> 
       <view class="right">
               <view class="name h4">{{item.title}}</view>  
               <view class="p">阅读到第1章</view>
-              <view class="toDleter">移出书架</view>
+              <view class="toDleter" bindtap="clickDel" data-id="{{item.id}}">移出书架</view>
       </view> 
    </view>
+</view>
+<view wx:else>暂无加购图书</view>
 </view>

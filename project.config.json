@@ -68,8 +68,8 @@
         },
         {
           "id": 1,
-          "name": "pages/index/index",
-          "pathName": "pages/index/index",
+          "name": "pages/serach/serach",
+          "pathName": "pages/serach/serach",
           "query": "",
           "scene": null
         }

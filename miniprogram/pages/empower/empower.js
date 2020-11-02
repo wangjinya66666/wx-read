@@ -1,24 +1,24 @@
-// pages/serach/serach.js
+// pages/empower/empower.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    msgAll:[]
   },
-  clickVlue(e){
+  handlegetUser(e){
     let that=this;
-    console.log(e.detail.value)
-    wx.request({
-      url: 'https://api.zhuishushenqi.com/book/auto-complete?query='+e.detail.value,
-      success:function(res){
-        // console.log(res.data.keywords);
-        that.setData({
-          msgAll:res.data.keywords
+    // console.log('用户信息',e.detail);
+    wx.login({
+      success (res) {
+        // console.log("code码",res.code)
+        wx.setStorageSync('token', {code:res.code,...e.detail});
+        wx.navigateBack({
+          delta: 1,
         })
       }
     })
+  
   },
   /**
    * 生命周期函数--监听页面加载

@@ -1,2 +1,8 @@
-<!--pages/serach/serach.wxml-->
-<text>pages/serach/serach.wxml</text>
+<view class="input">
+    <view class="i-container header_input">
+        <input type="text" placeholder="铁血文明" bindinput="clickVlue"/>
+    </view>
+    <view class="get-data ul">          
+        <view class="li"  wx:for="{{msgAll}}" wx:key='index'><text class="iconfont i icon-ziyuan"></text>{{item}}</view>
+    </view>
+</view>
